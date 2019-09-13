@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Csonka László">
+	<meta name="description" content="">
+	<title>Audi S3</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="kepek/drawn.png" rel="icon" type="image/x-icon">
+	<script>
+	function startTime() {
+		var today = new Date();
+		var h = today.getHours();
+		var m = today.getMinutes();
+		var s = today.getSeconds();
+		m = checkTime(m);
+		s = checkTime(s);
+		document.getElementById('txt').innerHTML =
+		h + ":" + m + ":" + s;
+		var t = setTimeout(startTime, 500);
+	}
+		function checkTime(i) {
+		if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+		return i;
+}
+</script>
+	
+</head>
+<body onload="startTime()">
+	<div id="txt"></div>
+
+		<div class="row"> 
+		
+		
+		<header class="col-12 col-t-12">
+			<img src="kepek/drawn.png" alt="logo">
+		</header>
+		
+		<nav class="col-3 col-t-6">
+			<ul>
+			
+				<li>
+					<a href="index.html" class="active">Főoldal</a>
+				</li>
+				
+			</ul>
+		</nav>
+		
+		<nav class="col-3 col-t-6">
+			<ul>
+				
+				<li>
+					<a href="tuning.html">Tuning</a>
+				</li>
+				
+			</ul>
+		</nav>
+		
+		<nav class="col-3 col-t-6">
+			<ul>
+				<li>
+					<a href="video.html">Videó</a>
+				</li>
+			</ul>
+		</nav>
+		
+		<nav class="col-3 col-t-6">
+			<ul>
+				<li>
+					<a href="generaciok.html">Generációk</a>
+				</li>
+			</ul>
+		</nav>
+		
+	</div>
+	
+
+
+	<div class="row"> 
+		<figure> 
+			<img src="kepek/side.jpg" class="s3oldal" alt="S3 oldalról">
+			<figcaption>Ez egy kép az autóról.</figcaption>
+		</figure>
+		<article class="col-12 col-t-12">
+		 <h1>Üdvözlöm az oldalon!</h1>
+		 <h2>Itt olvashat az audi S3-ról:</h2>
+			<p>Az Audi S3 az Audi A3 sport változata. Az eredeti A3-as 1996-ban jelent meg az európai piacon. A német gyár a típus megjelenésével egyfajta trendet indított el az autógyártásban, hiszen a konkurens presztízsmárkák közül elsőként adta ki "csapott hátú kisautó" modellt. Az autó eleinte csak 3 ajtós változatban volt kapható, amely sportosabb megjelenést kölcsönzött a konszern legkedveltebb modelljével szemben. Mindegyik motor soros, négyhengeres volt, amelyhez elsőkerék- és összkerék meghajtást is lehetett rendelni.</p>
+			<p>1999-ben az Audi a modell még erősebb változatait mutatta be: a 180 lóerős 1.8 Turbót és az 1.9 TDI-t változó geometriájú turbófeltöltővel. A négykerék-meghajtás választható maradt mind a 150, mind a 180 lóerős változathoz. A piaci nyomás hatására az Audi megadta magát, és megjelent a palettán az 5 ajtós karosszéria, amelyet eredetileg soha nem akart kiadni.
+			2001-ben ebből az 1.8 Turbós erőforrrásból fejlesztették ki az S3-at, ami már 225 lóerő leadására volt képes.(Wikipédia)</p>
+
+		</article>
+	
+	
+		<div class="col-12 col-t-12">
+			
+		</div>
+	</div>
+	
+	
+	
+	
+	<div class="row"> 
+		<footer class="col-12 col-t-12">
+		
+			Az oldal egy beadandó házifeladat.
+		
+		</footer>
+	</div>
+ 
+ 
+	</body>
+</html>

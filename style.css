@@ -1,0 +1,174 @@
+*{
+	box-sizing: border-box;
+}
+
+
+
+body{
+	font-family: 'Verdana';
+	background-color: white;
+	color: #707172;
+}
+header{
+	
+	font-size: 3em;
+	
+}
+
+
+nav ul{
+	list-style-type: none;
+	text-align:center;
+	border-collapse: collapse;
+}
+
+nav li{
+	
+	background-color: white;
+	font-size: 2em;
+	text-align:center;
+	
+}
+
+nav li a{
+	display:block;
+	color:#e80012;
+	text-decoration:none;
+	font-size: 100%;
+	font-weight:bold;
+	padding: 50px;
+	border: 10px gray solid;
+	border-radius: 100px;
+	text-align:center;
+}
+
+.active{
+	
+	background-color: #e80012;
+	color: #ffffff;
+}
+
+nav li a:hover{
+	
+	background-color: #e80012;
+	color: #ffffff;
+	
+}
+
+footer{
+	background-color: #969696;
+	text-align:center;
+	color:white;
+	
+}
+
+/*====IDÁIG MINDEN OLDALON MEGEGYEZIK====*/
+
+.s3oldal{
+	
+	width:70%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table{
+	
+	
+	margin-right: auto;
+	margin-left: auto;
+	background: url("kepek/dyno.jpg");
+	background-size: contain;
+	border-collapse: collapse;
+	background-repeat: no-repeat;
+	border: 3px gray solid;
+	color: blue;
+	font-weight: bold;
+	
+}
+
+td{
+	
+	border: 1px gray solid;
+	padding: 2em;
+	text-align: center;
+	
+}
+
+a img {
+	width: 40%;
+	height: 40%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2em;
+}
+
+.formdiv{
+/*	display: block;*/
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
+	font-size: 2em;
+}
+
+video{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2em;
+}
+
+.textarea{
+padding: 1.5em;
+}
+
+a:visited{
+	
+}
+
+/*====RESZPONZIVITAS====*/
+
+[class*="col-"] { /*mobile first*/
+    float: left;
+    padding: 15px;
+    width: 100%;
+}
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+@media only screen and (min-width: 600px) {
+    /* tablet */
+    .col-t-1 {width: 8.33%;}
+    .col-t-2 {width: 16.66%;}
+    .col-t-3 {width: 25%;}
+    .col-t-4 {width: 33.33%;}
+    .col-t-5 {width: 41.66%;}
+    .col-t-6 {width: 50%;}
+    .col-t-7 {width: 58.33%;}
+    .col-t-8 {width: 66.66%;}
+    .col-t-9 {width: 75%;}
+    .col-t-10 {width: 83.33%;}
+    .col-t-11 {width: 91.66%;}
+    .col-t-12 {width: 100%;}
+}
+@media only screen and (min-width: 1230px) {
+    /* számítógép */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
